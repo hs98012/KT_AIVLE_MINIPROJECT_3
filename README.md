@@ -1,5 +1,5 @@
 # KT_AIVLE_MINIPROJECT_3
-
+ 
 ## 프로젝트 소개
 헬스케어·사업공고 분석 사례로 확인하는 **산업 맞춤형 에이전트 시스템 구현**
 
@@ -25,6 +25,7 @@
   - 주가 조회
   - 기업 개요 요약
 - 결과를 Markdown 파일로 저장해 이후 RAG/보고서에 재활용 가능
+<img width="1083" height="596" alt="WebAgent md" src="https://github.com/user-attachments/assets/c4dfc623-27e2-48b6-83d0-0cb6d57a7686" />
 
 ### Day2 – RagAgent (내부 문서 RAG)
 
@@ -34,6 +35,7 @@
 - HyDE 기반 Query 확장 후 FAISS 검색
 - 검색 결과에 대해 품질/범위 체크, 스코어 임계값을 두어 “근거가 충분할 때만 요약 제공”하는 보수적 게이팅 전략 적용
 - Hallucination를 최소화하는 RAG 파이프라인 구현
+<img width="1117" height="441" alt="RagAgent 초안요약" src="https://github.com/user-attachments/assets/c5682606-b66a-475f-82c5-12c53997a6d1" />
 
 ### Day3 – GovAgent & PPS Agent (정부 공고/입찰)
 
@@ -50,11 +52,13 @@
   - 마감일
   - 예산
   - 링크
+<img width="1106" height="516" alt="GovAgent 공고탐색결과" src="https://github.com/user-attachments/assets/1027ce81-f7ec-4479-ac04-2f02b756c894" />
 
 #### PPS Agent
 
 - 나라장터 OpenAPI를 통해 입찰 공고를 구조화 수집
 - 사업명 / 기관 / 마감일 / 예산 / 입찰 방식 등
+<img width="1119" height="480" alt="PPSAgent 공고탐색결과" src="https://github.com/user-attachments/assets/a3cac0b2-48d7-4ea6-997a-a9424f8de8b7" />
 
 ### 결과
 - 하나의 질문으로 뉴스·주가·정부 공고·입찰 정보·내부 문서를 연결하는 멀티 에이전트 기반 정보검색·요약 시스템 구조 설계 및 구현
